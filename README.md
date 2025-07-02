@@ -1,54 +1,107 @@
-# Youtube-Analytics-dashboard
-This project provides a data-driven dashboard built using Python, YouTube Data API v3, and Power BI to analyze and compare statistics across multiple YouTube channels.
-🔧 Tech Stack:
-Python (for data extraction)
+ 📊 YouTube Multi-Channel Analytics Dashboard
 
-Google API Client (for accessing YouTube Data API)
+This project is a comprehensive solution for analyzing and visualizing data from multiple YouTube channels. Using **Python** and the **YouTube Data API**, we extract real-time statistics from selected channels and visualize the insights through an interactive **Power BI** dashboard.
 
-Pandas (for data manipulation)
+Whether you're a content creator, digital marketer, or data analyst, understanding how different YouTube channels perform is crucial. This project allows you to:
+* Fetch live subscriber, view, and video counts from multiple channels
+* Store data for future analysis
+* Create a professional dashboard to compare metrics across channels
 
-Power BI (for dashboard creation and visualization)
+ 🚀 Features
 
-🚀 Features:
-Extracts real-time data from multiple YouTube channels including:
+✅ Fetch data from the **YouTube Data API v3**
+✅ Analyze multiple channels in one go
+✅ Save the data into a structured CSV file
+✅ Build interactive **Power BI** visuals for insights
+✅ Compare channels side-by-side on key performance metrics
 
-Channel Name
+ 🔧 Tech Stack
 
-Subscriber Count
+| Tool             | Purpose                              |
+| ---------------- | ------------------------------------ |
+| Python           | Scripting and data extraction        |
+| Pandas           | Data manipulation and CSV export     |
+| YouTube Data API | Channel data retrieval               |
+| Power BI         | Dashboard creation and visualization |
 
-Total Views
+ 📂 Project Structure
 
-Total Videos
+```
+📁 YouTube-Dashboard/
+│
+├── yt_data_python.py               # Python script to fetch channel stats
+├── multi_channel_stats.csv         # Exported dataset from API
+└── Youtube multi-channel dashboard.pbix  # Power BI dashboard file
+```
 
-Channel ID
+---
 
-Stores the data in a CSV file (multi_channel_stats.csv)
+ 📌 Channels Used
 
-Creates a dynamic Power BI dashboard (Youtube multi-channel dashboard.pbix) to:
+The current setup analyzes the following channels:
 
-Compare subscriber growth
+* [Google Developers](https://www.youtube.com/@GoogleDevelopers)
+* [TEDx Talks](https://www.youtube.com/@TEDxTalks)
+* [Netflix](https://www.youtube.com/@Netflix)
+* [5-Minute Crafts](https://www.youtube.com/@5MinuteCrafts)
+* [BB Ki Vines](https://www.youtube.com/@BBKiVines)
 
-Visualize views vs videos published
+> You can customize and add more channels using their Channel IDs in the script.
 
-Identify high-performing channels at a glance
+---
 
-📁 Project Structure:
-yt_data_python.py: Python script to fetch channel statistics via YouTube API.
+🛠️ How to Use
 
-multi_channel_stats.csv: Output data used for dashboard creation.
+### 1. Clone the Repository
 
-Youtube multi-channel dashboard.pbix: Power BI file for interactive analysis.
+```bash
+git clone https://github.com/yourusername/YouTube-Dashboard.git
+cd YouTube-Dashboard
+'
+ 2. Install Requirements
 
-📌 Sample Channels Used:
-Google Developers
 
-TEDx Talks
+pip install google-api-python-client pandas
+```
 
-Netflix
+### 3. Get Your YouTube API Key
 
-5-Minute Crafts
+* Visit [Google Developers Console](https://console.developers.google.com/)
+* Enable YouTube Data API v3
+* Generate an API Key and paste it in `yt_data_python.py`
 
-BB Ki Vines
+### 4. Run the Script
 
-📈 Insights:
-This dashboard can help content creators, marketers, or analysts to benchmark YouTube channels, monitor competitors, and make data-informed content strategies.
+```bash
+python yt_data_python.py
+```
+
+This will generate `multi_channel_stats.csv` containing the statistics of each channel.
+
+### 5. Open the Power BI Dashboard
+
+* Open `Youtube multi-channel dashboard.pbix` in Power BI Desktop.
+* Refresh the dataset to visualize the latest data.
+
+💡 Future Enhancements
+
+* Add sentiment analysis of video comments
+* Track channel growth over time
+* Automate daily/weekly data updates
+* Deploy a web-based version of the dashboard
+
+🙌 Acknowledgements
+
+* [YouTube Data API](https://developers.google.com/youtube/v3)
+* [Google API Client for Python](https://github.com/googleapis/google-api-python-client)
+* [Microsoft Power BI](https://powerbi.microsoft.com/)
+
+---
+
+📬 Contact
+
+**Priyanshi Vishwakarma**
+📧 Email: *\[pvkdkv@gmail.com]*
+
+
+
